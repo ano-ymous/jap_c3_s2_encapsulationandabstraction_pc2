@@ -1,6 +1,6 @@
 ## Practice Statement - Report Generation
 
-**Educational institutions are overburdened with paperwork and manual processes. They also find it difficult to maintain records of the students’ results, their attendance, assessments, etc. The management and teachers of the Oak Bridge School have already conducted exams for their high school students and the evaluation of the answer sheets is also complete. The teachers with the help of the technical team have to set up a system that automates the grading system. Teams are formed and each team is assigned a task.**
+**Educational institutions are overburdened with paperwork and manual processes. They also find it difficult to maintain records of the students’ results, their attendance, assessments, etc. The management and teachers at the Oak Bridge School have already conducted exams for their high school students and the evaluation of the answer sheets is also complete. The teachers with the help of the technical team have to set up a system that automates the grading system. Teams are formed and each team is assigned a task.**
 
 **Evaluation and Grading Team:**
 
