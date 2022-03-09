@@ -1,4 +1,4 @@
-package src.main.java;
+package com.java.main;
 
 import java.util.Arrays;
 
@@ -9,7 +9,7 @@ public class Grade {
     private float averageGradeScore;
     private int noOfStudents;
     boolean sorted = false;
-    Grade(int grade){
+    public Grade(int grade){
         this.grade = grade;
     }
 
@@ -18,7 +18,7 @@ public class Grade {
     }
 
     public void sortStudents(){
-        Arrays.sort(this.students,(a,b)->(b.getTotalMarks()-a.getTotalMarks()));
+        if(!sorted) Arrays.sort(this.students,(a,b)->(b.getTotalMarks()-a.getTotalMarks()));
         sorted = true;
     }
 
@@ -78,5 +78,15 @@ public class Grade {
     public void setSubjects(Subject[] subjects) {
         this.subjects = subjects;
         sorted = false;
+    }
+
+    @Override
+    public String toString() {
+        return "Grade{" +
+                "grade=" + grade +
+                ", subjects=" + Arrays.toString(subjects) +
+                ", students=" + Arrays.toString(students) +
+                ", averageGradeScore=" + averageGradeScore +
+                ", noOfStudents=" + noOfStudents;
     }
 }

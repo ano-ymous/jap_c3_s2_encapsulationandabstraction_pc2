@@ -1,10 +1,12 @@
-package src.main.java;
+package com.java.main;
 
 public class Subject {
+    private String subjectCode;
     private String subjectName;
     private float averageScore;
     private int noOfStudents;
-    Subject(String subjectName){
+    public Subject(String subjectCode,String subjectName){
+        this.subjectCode = subjectCode;
         this.subjectName = subjectName;
     }
 
@@ -30,5 +32,21 @@ public class Subject {
 
     public void setSubjectName(String subjectName) {
         this.subjectName = subjectName;
+    }
+
+    public String getSubjectCode() {
+        return subjectCode;
+    }
+
+    public void setSubjectCode(String subjectCode) {
+        this.subjectCode = subjectCode;
+    }
+
+    @Override
+    public String toString() {
+        return "subjectCode= " + subjectCode +
+                ", subjectName= " + subjectName+
+                ", averageScore=" + averageScore +
+                ", noOfStudents=" + noOfStudents;
     }
 }

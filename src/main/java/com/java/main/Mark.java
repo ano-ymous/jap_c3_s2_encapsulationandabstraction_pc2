@@ -1,9 +1,9 @@
-package src.main.java;
+package com.java.main;
 
 public class Mark {
     private Subject subject;
     private int marks;
-    Mark(Subject subject,int marks){
+    public Mark(Subject subject,int marks){
         this.subject = subject;
         this.marks = marks;
     }
@@ -25,5 +25,11 @@ public class Mark {
     }
     public String getStatus(){
         return marks<40 ? "Fail" : "Pass";
+    }
+
+    @Override
+    public String toString() {
+        return "subject=" + subject.getSubjectName() +
+                ", marks=" + marks;
     }
 }

@@ -1,14 +1,15 @@
-package src.main.java;
+package com.java.main;
 
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Date;
 
-public class Student implements Comparable {
+public class Student {
     private String studentRollNo;
     private String studentName;
     private Grade grade;
     private Mark[] marks = null;
-    Student(String studentRollNo,String studentName,Grade grade){
+    public Student(String studentRollNo,String studentName,Grade grade){
         this.studentRollNo = studentRollNo;
         this.studentName = studentName;
         this.grade = grade;
@@ -71,7 +72,10 @@ public class Student implements Comparable {
     }
 
     @Override
-    public int compareTo(Object o) {
-        return 0;
+    public String toString() {
+        return "studentRollNo='" + studentRollNo +
+                ", studentName='" + studentName +
+                ", grade=" + grade.getGrade() +
+                ", marks=" + Arrays.toString(marks);
     }
 }
